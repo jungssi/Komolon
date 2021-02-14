@@ -10,9 +10,8 @@ Komolon is a assistant for destinty2 game play
 
 # Getting Started
 
-1. Require httpd (Apache/2.4.6), mysql Ver 14.14 Distrib 5.6.51
-2. Open port 80 or 443
-3. Move /komolon/ directory to /var/www/html/
-4. Connect to https://localhost/komolon/
-
+1. Require httpd (Apache/2.4.6), Python 3.x 
+2. Open port 5000 
+3. Run run_komolon.sh
+4. Connect to http://localhost:5000/
 
