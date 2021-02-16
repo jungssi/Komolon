@@ -1,5 +1,4 @@
 # Komolon
-<hr/>
 
 **K-Omolon Destiny2 Assistant**
 
@@ -11,7 +10,6 @@ Komolon is a assistant for destinty2 game play
 
 
 # Getting Started
-<hr/>
 
 -Require Python 3.x
 -Open port 5000 for dev    
@@ -22,7 +20,6 @@ Komolon is a assistant for destinty2 game play
 
 
 # Shell Scripts
-<hr/>
 
 ## run_komolon_dev.sh 
 - run Komolon flask develop server to http://localhost:5000/
