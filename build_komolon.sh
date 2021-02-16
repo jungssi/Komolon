@@ -4,7 +4,6 @@ export LANG="en_US.UTF-8"
 
 main()
 {
-	print_start_message
 	echo "Welcome to duty K-guardian.."
 
 	print_title "CHECKING SYSTEM VALIDATION"
@@ -39,28 +38,15 @@ main()
 	pip install -r $req_path -q
 	pip freeze
 
-	print_title "RUNNING DEV FLASK SERVER"
 
-	echo "코몰론 개발 서버 가동 시작 < 부활 제한 구역 >"
-	local flask_path=$base_dir"/Komolon/run_dev.py"
-	export FLASK_ENV=development
-	export FLASK_APP=$flask_path 
-	flask run
-	echo "flask down.."
+	print_title "BUILD FLASK WHL"
+
+	cd ${base_dir}
+	python setup.py bdist_wheel
+	cd -
 
 	echo "deactivate venv"
 	deactivate
-}
-
-function print_start_message()
-{
-cat << "EOF"
-   __ __                __            _   ____           __ __    _____                 ___         
-  / //_/__  __ _  ___  / /__  ___    (_) / __/__  ____  / //_/___/ ___/_ _____ ________/ (_)__ ____ 
- / ,< / _ \/  ' \/ _ \/ / _ \/ _ \  _   / _// _ \/ __/ / ,< /___/ (_ / // / _ `/ __/ _  / / _ `/ _ \
-/_/|_|\___/_/_/_/\___/_/\___/_//_/ (_) /_/  \___/_/   /_/|_|    \___/\_,_/\_,_/_/  \_,_/_/\_,_/_//_/
-                                                                                                    
-EOF
 }
 
 function print_title()

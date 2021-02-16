@@ -10,8 +10,15 @@ Komolon is a assistant for destinty2 game play
 
 # Getting Started
 
-1. Require httpd (Apache/2.4.6), Python 3.x 
-2. Open port 5000 
-3. Run run_komolon.sh
-4. Connect to http://localhost:5000/
+Require httpd (Apache/2.4.6), Python 3.x 
+Open port 5000 for dev 
 
+1. Run run_komolon_dev.sh
+2. Connect to http://localhost:5000/
+
+
+# Shell Scripts
+run_komolon_dev.sh : run Komolon flask server to http://localhost:5000/
+build_komolon.sh : (LIVE ONLY) Build komolon flask to whl
+deploy_komolon.sh : (LIVE ONLY) Copy komolon whl and wsgi to deploy path and install to product server venv 
+rm_temp_files.sh : Remove temp files in this path for ready to commit
