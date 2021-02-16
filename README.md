@@ -18,7 +18,11 @@ Open port 5000 for dev
 
 
 # Shell Scripts
+
 run_komolon_dev.sh : run Komolon flask server to http://localhost:5000/
+
 build_komolon.sh : (LIVE ONLY) Build komolon flask to whl
+
 deploy_komolon.sh : (LIVE ONLY) Copy komolon whl and wsgi to deploy path and install to product server venv 
+
 rm_temp_files.sh : Remove temp files in this path for ready to commit
